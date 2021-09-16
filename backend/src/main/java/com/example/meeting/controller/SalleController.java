@@ -34,8 +34,8 @@ public class SalleController {
     //localhost:8080/spring-service/getSalleById/{id}
     @GetMapping(value = "/getSalleById/{id}")
     @ResponseBody
-    public ResponseEntity<Salle> getSalleById(@PathVariable("id")long salleId) {
-        Salle salle =  iSalleServices.chercherSalle(salleId);
+    public ResponseEntity<Salle> getSalleById(@PathVariable("id")long id) {
+        Salle salle =  iSalleServices.chercherSalle(id);
         return new ResponseEntity<>(salle, HttpStatus.OK);
 
     }
@@ -50,8 +50,8 @@ public class SalleController {
     // http://localhost:8080/spring-service/remove-salle/{salleId}
     @DeleteMapping("/remove-salle/{salleId}")
     @ResponseBody
-    public void removeSalle(@PathVariable("salleId") long Id) {
-        iSalleServices.supprimeSalle(Id);
+    public void removeSalle(@PathVariable("salleId") long salleId) {
+        iSalleServices.supprimeSalle(salleId);
     }
 
 }

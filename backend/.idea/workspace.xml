@@ -5,15 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b78c188-7e85-4819-917c-1913d195525a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/config/LoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/meeting/ReunionControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meeting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/meeting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/MeetingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/MeetingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/controller/SalleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/controller/SalleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/entities/Reunion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/entities/Reunion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/MeetingApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/MeetingApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/controller/SalleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/controller/SalleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/entities/Reunion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/entities/Reunion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/entities/Salle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/entities/Salle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/repository/RepoReunion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/repository/RepoReunion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/repository/RepoSalle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/repository/RepoSalle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/service/IReunionServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/service/IReunionServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/service/ISalleServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/service/ISalleServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/service/ReunionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/service/ReunionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/service/SalleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/service/SalleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/meeting-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/meeting-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/meeting-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/meeting-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.meeting.MeetingApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.meeting.MeetingApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.meeting.MeetingApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.meeting.MeetingApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="ReunionControllerTests" />
+    </enabled-run-configurations>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="1xYreIshZPoOh4FJx7N11whPzdh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -30,18 +79,40 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Téléchargements/Exercice/demo" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.meeting.config" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn install" />
       <command value="mvn install Dskip:Test" />
       <command value="mvn install -Dskip:Tests" />
       <command value="mvn install -DskipTests" />
+      <command value="mvn install" />
+      <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ReunionControllerTests">
+    <configuration name="ReunionControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="meeting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.meeting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.meeting" />
+      <option name="MAIN_CLASS_NAME" value="com.example.meeting.ReunionControllerTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -60,6 +131,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ReunionControllerTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -72,6 +148,8 @@
       <workItem from="1630542958674" duration="226000" />
       <workItem from="1630543196042" duration="1535000" />
       <workItem from="1630579661246" duration="18612000" />
+      <workItem from="1631811253384" duration="3139000" />
+      <workItem from="1631826586400" duration="5200000" />
     </task>
     <servers />
   </component>
@@ -88,5 +166,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
