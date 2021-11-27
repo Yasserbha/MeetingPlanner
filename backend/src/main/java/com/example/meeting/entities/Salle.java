@@ -23,7 +23,7 @@ public class Salle implements Serializable {
 
     @OneToMany(mappedBy = "salle",
             cascade = CascadeType.ALL , fetch = FetchType.LAZY)
-    @JsonManagedReference
+
     private List<Reunion> reunion;
 
     public void setId(long id) {

@@ -2,12 +2,12 @@ package com.example.meeting.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sun.istack.NotNull;
 
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
+
 @Builder
 public class Reunion implements Serializable {
     @Id
@@ -24,8 +24,8 @@ public class Reunion implements Serializable {
     private long id ;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JsonBackReference
     @JoinColumn(name = "idSalle", referencedColumnName = "id")
+    @JsonIgnore
     private Salle salle;
 
 
@@ -78,5 +78,15 @@ public class Reunion implements Serializable {
     public LocalDateTime getFinReservation() {
         return finReservation;
     }
-   
+
+    @Override
+    public String toString() {
+        return "Reunion{" +
+                "id=" + id +
+                ", typeReunion=" + typeReunion +
+                ", debutReservation=" + debutReservation +
+                ", finReservation=" + finReservation +
+                ", nbrPresonne=" + nbrPresonne +
+                '}';
+    }
 }
