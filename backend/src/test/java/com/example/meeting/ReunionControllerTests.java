@@ -4,7 +4,7 @@ package com.example.meeting;
 
 import com.example.meeting.entities.Reunion;
 import com.example.meeting.entities.TypeReunion;
-import com.example.meeting.repository.RepoReunion;
+import com.example.meeting.repositories.RepoReunion;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Order;
 

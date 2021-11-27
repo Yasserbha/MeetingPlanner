@@ -1,4 +1,4 @@
-package com.example.meeting.repository;
+package com.example.meeting.repositories;
 
 import com.example.meeting.entities.Reunion;
 import org.springframework.data.jpa.repository.JpaRepository;

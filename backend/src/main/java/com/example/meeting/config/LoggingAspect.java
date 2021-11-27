@@ -23,12 +23,12 @@ public class LoggingAspect {
 
     private static final Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
-    @Before("execution(* com.example.meeting.controller.*.*(..))")
+    @Before("execution(* com.example.meeting.controllers.*.*(..))")
     public void logMethodEntry(JoinPoint joinPoint) {
         String name = joinPoint.getSignature().getName();
         logger.info("In method " + name + " : ");
     }
-    @Around("execution(* com.example.meeting.controller.*.*(..))")
+    @Around("execution(* com.example.meeting.controllers.*.*(..))")
     public Object profile(ProceedingJoinPoint pjp) throws Throwable {
         long start = System.currentTimeMillis();
         Object obj = pjp.proceed();

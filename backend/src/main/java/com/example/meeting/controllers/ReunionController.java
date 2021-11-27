@@ -1,8 +1,8 @@
-package com.example.meeting.controller;
+package com.example.meeting.controllers;
 
-import com.example.meeting.entities.Reunion;
+import com.example.meeting.dto.ReunionRequestDTO;
+import com.example.meeting.dto.ReunionResponseDTO;
 import com.example.meeting.service.IReunionServices;
-import com.example.meeting.service.ReunionServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,15 +21,15 @@ public class ReunionController {
     @Autowired
     IReunionServices iReunionServices;
 
-    //localhost:8080/spring-service/ajoutReunion
+    //localhost:8080/ajoutReunion
     @PostMapping("/ajoutReunion")
     @ResponseBody
-    public ResponseEntity<String> ajouterReunion(@RequestBody  Reunion reunion)
+    public ResponseEntity<String> ajouterReunion(@RequestBody ReunionRequestDTO reunionRequestDTO)
     {
 
         try {
-            LOG.info("*************"+reunion);
-            String msg = iReunionServices.ajoutReunion(reunion);
+            LOG.info("*************"+reunionRequestDTO);
+            String msg = iReunionServices.ajoutReunion(reunionRequestDTO);
             if(msg.equals("Ajout valid !")) {
                 return new ResponseEntity<>(msg, HttpStatus.CREATED);
             }
@@ -39,23 +39,23 @@ public class ReunionController {
         }
     }
 
-    //localhost:8080/spring-service/getReunionById/{id}
+    //localhost:8080/getReunionById/{id}
     @GetMapping(value = "/getReunionById/{id}")
     @ResponseBody
-    public ResponseEntity<Reunion> getreunionById(@PathVariable("id")long reunionId) {
-       Reunion reunion =  iReunionServices.chercherReunion(reunionId);
-            return new ResponseEntity<>(reunion, HttpStatus.OK);
+    public ResponseEntity<ReunionResponseDTO> getreunionById(@PathVariable("id")long reunionId) {
+        ReunionResponseDTO reunionResponseDTO =  iReunionServices.chercherReunion(reunionId);
+            return new ResponseEntity<>(reunionResponseDTO, HttpStatus.OK);
 
     }
-    //localhost:8080/spring-service/getReunions
+    //localhost:8080/getReunions
     @GetMapping(value = "/getReunions")
     @ResponseBody
-    public List<Reunion> getReunions() {
+    public List<ReunionResponseDTO> getReunions() {
         return iReunionServices.afficheReunion();
 
     }
 
-    // http://localhost:8080/spring-service/{reunionId}
+    // http://localhost:8080/{reunionId}
     @DeleteMapping("/remove-reunion/{reunionId}")
     @ResponseBody
     public void removeReunion(@PathVariable("reunionId") long Id) {

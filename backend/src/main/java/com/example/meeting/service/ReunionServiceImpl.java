@@ -1,18 +1,21 @@
 package com.example.meeting.service;
 
+import com.example.meeting.dto.ReunionRequestDTO;
+import com.example.meeting.dto.ReunionResponseDTO;
+import com.example.meeting.dto.SalleRequestDTO;
+import com.example.meeting.dto.SalleResponseDTO;
 import com.example.meeting.entities.Reunion;
-import com.example.meeting.entities.Salle;
 import com.example.meeting.entities.TypeReunion;
-import com.example.meeting.repository.RepoReunion;
-import com.example.meeting.repository.RepoSalle;
+import com.example.meeting.mappers.ReunionMapper;
+import com.example.meeting.repositories.RepoReunion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 public class ReunionServiceImpl implements IReunionServices {
     private static final Logger LOG = LoggerFactory.getLogger(ReunionServiceImpl.class);
@@ -27,13 +30,19 @@ public class ReunionServiceImpl implements IReunionServices {
     @Autowired
     RepoReunion repoReunion;
 
-    @Override
-    public String ajoutReunion(Reunion reunion) {
+    private ReunionMapper reunionMapper;
 
+    public ReunionServiceImpl(ReunionMapper reunionMapper) {
+        this.reunionMapper = reunionMapper;
+    }
+
+    @Override
+    public String ajoutReunion(ReunionRequestDTO reunionRequestDTO) {
+        Reunion reunion = reunionMapper.reunionRequestDTOtoReunion(reunionRequestDTO);
         // msg de return
         String msg ="Ajout valid !";
         // chercher la salle apartir de la reunion
-        Salle salle = salleService.chercherSalle(reunion.getSalle().getId());
+        SalleResponseDTO salleResponseDTO = salleService.chercherSalle(reunion.getSalle().getId());
         //ajout static d'une Heure finReservation = debutReservation + 1H
         reunion.setFinReservation(reunion.getDebutReservation().plusHours(1));
         LOG.info("*******"+reunion.getFinReservation());
@@ -42,7 +51,7 @@ public class ReunionServiceImpl implements IReunionServices {
                 .filter(e->e.getSalle().getId() == reunion.getSalle().getId())
                 .anyMatch(e->e.getDebutReservation().equals(reunion.getDebutReservation()) || e.getFinReservation().equals(reunion.getDebutReservation().getHour()-1));
 
-        List<String> listEquipement= salle.getEquipements();
+        List<String> listEquipement= salleResponseDTO.getEquipements();
         LOG.info("*********** listequipement  ********"+listEquipement);
         LOG.info("*********** TypeReunion ********"+reunion.getTypeReunion());
 
@@ -65,7 +74,7 @@ public class ReunionServiceImpl implements IReunionServices {
                     webcams--;
                 }
                 LOG.info("*********** listequipement  ********"+listEquipement);
-                salle.setEquipements(listEquipement);
+                salleResponseDTO.setEquipements(listEquipement);
             }
 
         }else if(reunion.getTypeReunion().equals(TypeReunion.SPEC)) {
@@ -112,25 +121,31 @@ public class ReunionServiceImpl implements IReunionServices {
         } if(founddate){
             LOG.error("1H avant une 2eme reunion  ! "+reunion.getDebutReservation().getHour());
             msg ="1H avant une 2eme reunion  ! "+reunion.getDebutReservation().getHour() ;
-        } if(reunion.getNbrPresonne() > (salle.getNbrPlace() * 70)/100){
+        } if(reunion.getNbrPresonne() > (salleResponseDTO.getNbrPlace() * 70)/100){
             LOG.error("Nombre de place  "+reunion.getNbrPresonne());
-            LOG.error("Nombre de place limte "+(salle.getNbrPlace() * 70)/100);
-            msg ="Nombre de place limte "+(salle.getNbrPlace() * 70)/100;
+            LOG.error("Nombre de place limte "+(salleResponseDTO.getNbrPlace() * 70)/100);
+            msg ="Nombre de place limte "+(salleResponseDTO.getNbrPlace() * 70)/100;
         }
          if(msg.contains("Ajout valid !")){
             LOG.info("les equipement restants pieuvres: "+pieuvres+" Ecran : "+ecrans+" WebCam : "+webcams+" Tableau : "+tableaux);
             repoReunion.save(reunion);
-            LOG.info("salle "+salle);
-            List<Reunion> reunions = salle.getReunion();
+            LOG.info("salle "+salleResponseDTO);
+            List<Reunion> reunions = salleResponseDTO.getReunion();
             reunions.add(reunion);
-            salle.setReunion(reunions);
+             salleResponseDTO.setReunion(reunions);
             // MAJ de l'entité Salle apres l'ajout du reunion
-            salleService.ajoutSalle(salle);
+             SalleRequestDTO salleRequestDTO = new SalleRequestDTO();
+             salleRequestDTO.setReunion(salleResponseDTO.getReunion());
+             salleRequestDTO.setId(salleResponseDTO.getId());
+             salleRequestDTO.setName(salleResponseDTO.getName());
+             salleRequestDTO.setNbrPlace(salleResponseDTO.getNbrPlace());
+             salleRequestDTO.setEquipements(salleResponseDTO.getEquipements());
+            salleService.ajoutSalle(salleRequestDTO);
         }
         return msg;
     }
     @Override
-    public String supprimeReunion(long idReunion) {
+    public ReunionResponseDTO supprimeReunion(long idReunion) {
         Reunion reunion =   repoReunion.findById(idReunion).orElse(null);
         try{
             repoReunion.delete(reunion);
@@ -138,24 +153,23 @@ public class ReunionServiceImpl implements IReunionServices {
         catch (Exception e) {
             LOG.error("Error Salle not found  : " + e);
         }
-        return reunion.toString();
+        return reunionMapper.reunionToReunionResponseDTO(reunion);
     }
 
     @Override
-    public List<Reunion> afficheReunion() {
+    public List<ReunionResponseDTO> afficheReunion() {
 
-        return repoReunion.findAll();
+        List<Reunion> reunions= repoReunion.findAll();
+        List<ReunionResponseDTO> reunionResponseDTOS = reunions.stream()
+                .map(reu->reunionMapper.reunionToReunionResponseDTO(reu))
+                .collect(Collectors.toList());
+        return reunionResponseDTOS;
     }
 
-    Reunion reunion;
+
     @Override
-    public Reunion chercherReunion(long idReunion) {
-        try{
-            reunion=  repoReunion.findById(idReunion).orElse(null);
-        }
-        catch (Exception e) {
-            LOG.error("Error Salle not found  : " + e);
-        }
-        return reunion;
+    public ReunionResponseDTO chercherReunion(long idReunion) {
+           Reunion reunion=  repoReunion.findById(idReunion).get();
+        return reunionMapper.reunionToReunionResponseDTO(reunion);
     }
 }

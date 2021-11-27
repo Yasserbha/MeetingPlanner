@@ -5,11 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b78c188-7e85-4819-917c-1913d195525a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_12_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_200.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_69.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_2_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_integration_2_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_4_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_common_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_ui_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webmvc_core_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_swagger_ui_3_38_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_webjars_locator_core_0_46.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/dto/ReunionRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/dto/ReunionResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/dto/SalleRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/dto/SalleResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/mappers/ReunionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/mappers/SalleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_26.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meeting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/meeting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/MeetingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/MeetingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/config/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/config/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/controller/ReunionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/controllers/ReunionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/controller/SalleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/controllers/SalleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/entities/Reunion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/entities/Reunion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/entities/Salle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/entities/Salle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/repository/RepoReunion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/repositories/RepoReunion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/repository/RepoSalle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/repositories/RepoSalle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/IReunionServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/IReunionServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/ISalleServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/ISalleServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/ReunionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/ReunionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/SalleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/SalleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/meeting/ReunionControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/meeting/ReunionControllerTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.meeting.MeetingApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.meeting.MeetingApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.meeting.MeetingApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.meeting.MeetingApplicationTests.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/meeting/ReunionControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/meeting/ReunionControllerTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/controller/ReunionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/controller/SalleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/service/IReunionServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/service/IReunionServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/service/ISalleServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/service/ISalleServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/service/ReunionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/service/ReunionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/service/SalleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/service/SalleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/meeting-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/meeting-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/meeting-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/meeting-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +67,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -52,7 +98,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Téléchargements/Exercice/demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
@@ -65,12 +111,12 @@
     <option name="myCommands">
       <command value="mvn install Dskip:Test" />
       <command value="mvn install -Dskip:Tests" />
-      <command value="mvn install -DskipTests" />
       <command value="mvn install" />
       <command value="mvn test" />
+      <command value="mvn install -DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReunionControllerTests">
+  <component name="RunManager" selected="Spring Boot.MeetingApplication">
     <configuration name="ReunionControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="meeting" />
       <extension name="coverage">
@@ -122,7 +168,12 @@
       <workItem from="1630543196042" duration="1535000" />
       <workItem from="1630579661246" duration="18612000" />
       <workItem from="1631811253384" duration="3139000" />
-      <workItem from="1631826586400" duration="5863000" />
+      <workItem from="1631826586400" duration="6023000" />
+      <workItem from="1631963005614" duration="1517000" />
+      <workItem from="1632087096553" duration="8000" />
+      <workItem from="1635066393407" duration="118000" />
+      <workItem from="1637962088736" duration="8765000" />
+      <workItem from="1638015342897" duration="10511000" />
     </task>
     <servers />
   </component>

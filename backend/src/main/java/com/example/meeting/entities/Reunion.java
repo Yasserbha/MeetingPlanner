@@ -2,6 +2,7 @@ package com.example.meeting.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sun.istack.NotNull;
 
 import lombok.*;
@@ -26,6 +27,9 @@ public class Reunion implements Serializable {
     @JsonBackReference
     @JoinColumn(name = "idSalle", referencedColumnName = "id")
     private Salle salle;
+
+
+
     @Enumerated(EnumType.STRING)
     @NotNull
     private TypeReunion typeReunion;
@@ -74,4 +78,5 @@ public class Reunion implements Serializable {
     public LocalDateTime getFinReservation() {
         return finReservation;
     }
+   
 }

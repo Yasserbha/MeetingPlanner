@@ -11,7 +11,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity @Data @NoArgsConstructor @AllArgsConstructor @ToString
+@Entity @Data @NoArgsConstructor @AllArgsConstructor  @ToString
 public class Salle implements Serializable {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)

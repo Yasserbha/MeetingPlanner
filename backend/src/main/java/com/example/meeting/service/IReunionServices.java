@@ -1,13 +1,15 @@
 package com.example.meeting.service;
 
+import com.example.meeting.dto.ReunionRequestDTO;
+import com.example.meeting.dto.ReunionResponseDTO;
 import com.example.meeting.entities.Reunion;
 
 import java.util.List;
 
 public interface IReunionServices {
-    public String ajoutReunion(Reunion reunion);
-    public String supprimeReunion(long idReunion);
-    public List<Reunion> afficheReunion();
-    public Reunion chercherReunion(long idReunion);
+     String ajoutReunion(ReunionRequestDTO reunionRequestDTO);
+     ReunionResponseDTO supprimeReunion(long idReunion);
+     List<ReunionResponseDTO> afficheReunion();
+     ReunionResponseDTO chercherReunion(long idReunion);
 
 }

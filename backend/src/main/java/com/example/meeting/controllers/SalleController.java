@@ -1,7 +1,7 @@
-package com.example.meeting.controller;
+package com.example.meeting.controllers;
 
-import com.example.meeting.entities.Reunion;
-import com.example.meeting.entities.Salle;
+import com.example.meeting.dto.SalleRequestDTO;
+import com.example.meeting.dto.SalleResponseDTO;
 import com.example.meeting.service.ISalleServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,36 +18,37 @@ public class SalleController {
     ISalleServices iSalleServices;
 
 
-    //localhost:8080/spring-service/ajoutSalle
+    //localhost:8080/ajoutSalle
     @PostMapping("/ajoutSalle")
     @ResponseBody
-    public ResponseEntity<Salle> ajouterSalle(@RequestBody Salle salle)
+    public ResponseEntity<SalleResponseDTO> ajouterSalle(@RequestBody SalleRequestDTO salleRequestDTO)
     {
         try {
-            iSalleServices.ajoutSalle(salle);
-            return new ResponseEntity<>(salle, HttpStatus.CREATED);
+            SalleResponseDTO salleResponseDTO= iSalleServices.ajoutSalle(salleRequestDTO);
+            return new ResponseEntity<>(salleResponseDTO, HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
-    //localhost:8080/spring-service/getSalleById/{id}
+    //localhost:8080/getSalleById/{id}
     @GetMapping(value = "/getSalleById/{id}")
     @ResponseBody
-    public ResponseEntity<Salle> getSalleById(@PathVariable("id")long id) {
-        Salle salle =  iSalleServices.chercherSalle(id);
-        return new ResponseEntity<>(salle, HttpStatus.OK);
+    public ResponseEntity<SalleResponseDTO> getSalleById(@PathVariable("id")long id) {
+
+        SalleResponseDTO salleResponseDTO =  iSalleServices.chercherSalle(id);
+        return new ResponseEntity<>(salleResponseDTO, HttpStatus.OK);
 
     }
-    //localhost:8080/spring-service/getSalle
+    //localhost:8080/getSalle
     @GetMapping(value = "/getSalle")
     @ResponseBody
-    public List<Salle> getSalle() {
+    public List<SalleResponseDTO> getSalle() {
         return iSalleServices.afficheSalle();
 
     }
 
-    // http://localhost:8080/spring-service/remove-salle/{salleId}
+    // http://localhost:8080/remove-salle/{salleId}
     @DeleteMapping("/remove-salle/{salleId}")
     @ResponseBody
     public void removeSalle(@PathVariable("salleId") long salleId) {
