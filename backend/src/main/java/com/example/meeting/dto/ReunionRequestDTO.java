@@ -17,4 +17,15 @@ public class ReunionRequestDTO implements Serializable {
     private LocalDateTime debutReservation;
     private LocalDateTime finReservation;
     private int nbrPresonne;
+
+    @Override
+    public String toString() {
+        return "ReunionRequestDTO{" +
+                "id=" + id +
+                ", typeReunion=" + typeReunion +
+                ", debutReservation=" + debutReservation +
+                ", finReservation=" + finReservation +
+                ", nbrPresonne=" + nbrPresonne +
+                '}';
+    }
 }

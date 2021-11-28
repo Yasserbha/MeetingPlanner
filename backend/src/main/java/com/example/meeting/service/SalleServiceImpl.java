@@ -38,7 +38,7 @@ public class SalleServiceImpl implements ISalleServices{
     public SalleResponseDTO supprimeSalle(long idSalle) {
         Salle salle = repoSalle.findById(idSalle).orElse(null);
         try{
-            repoSalle.delete(salle);
+            repoSalle.deleteById(idSalle);
            }
         catch (Exception e) {
             LOG.error("Error Salle not found  : " + e);

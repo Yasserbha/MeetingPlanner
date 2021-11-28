@@ -5,13 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b78c188-7e85-4819-917c-1913d195525a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/meeting/controllerTests/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/meeting/repositoriesTests/ReunionRepositoryTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/meeting/repositoriesTests/SalleRepositoryTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/meeting/serviceTests/ReunionServiceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/meeting/serviceTests/SalleServiceTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/entities/Reunion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/entities/Reunion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/MeetingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/MeetingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/controllers/ReunionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/controllers/ReunionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/dto/ReunionRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/dto/ReunionRequestDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/entities/Salle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/entities/Salle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/repositories/RepoSalle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/repositories/RepoSalle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/IReunionServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/IReunionServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/ReunionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/ReunionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/SalleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/meeting/service/SalleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/meeting/ReunionControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/meeting/controllerTests/SalleControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/MeetingApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/MeetingApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/controllers/ReunionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/controllers/ReunionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/dto/ReunionRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/dto/ReunionRequestDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/entities/Reunion$ReunionBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/entities/Reunion$ReunionBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/entities/Reunion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/entities/Reunion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/entities/Salle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/entities/Salle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/mappers/SalleMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/mappers/SalleMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/repositories/RepoSalle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/repositories/RepoSalle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/service/ReunionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/service/ReunionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/meeting/service/SalleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/meeting/service/SalleServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/meeting/mappers/ReunionMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/meeting/mappers/ReunionMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/meeting/mappers/SalleMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/meeting/mappers/SalleMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/meeting-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/meeting-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/meeting-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/meeting-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.meeting.MeetingApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.meeting.MeetingApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.meeting.MeetingApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.meeting.MeetingApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +58,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="JUnit" name="ReunionControllerTests" />
-    </enabled-run-configurations>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -69,12 +98,20 @@
       <command value="mvn install Dskip:Test" />
       <command value="mvn install -Dskip:Tests" />
       <command value="mvn install" />
-      <command value="mvn test" />
       <command value="mvn install -DskipTests" />
+      <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MeetingApplication">
-    <configuration name="ReunionControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SalleRepositoryTests">
+    <configuration name="All in meeting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="meeting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MeetingApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="meeting" />
       <extension name="coverage">
         <pattern>
@@ -83,8 +120,51 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.meeting" />
-      <option name="MAIN_CLASS_NAME" value="com.example.meeting.ReunionControllerTests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.meeting.MeetingApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SalleRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="meeting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.meeting.repositoriesTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.meeting.repositoriesTests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.meeting.repositoriesTests.SalleRepositoryTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example.meeting in meeting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="meeting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.meeting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.meeting" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.example.meeting.controllerTests in meeting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="meeting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.meeting.controllerTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.meeting.controllerTests" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,7 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReunionControllerTests" />
+        <item itemvalue="JUnit.SalleRepositoryTests" />
+        <item itemvalue="JUnit.All in meeting" />
+        <item itemvalue="JUnit.com.example.meeting in meeting" />
+        <item itemvalue="JUnit.com.example.meeting.controllerTests in meeting" />
+        <item itemvalue="JUnit.MeetingApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +214,8 @@
       <workItem from="1632087096553" duration="8000" />
       <workItem from="1635066393407" duration="118000" />
       <workItem from="1637962088736" duration="8765000" />
-      <workItem from="1638015342897" duration="12683000" />
+      <workItem from="1638015342897" duration="19397000" />
+      <workItem from="1638094581605" duration="22989000" />
     </task>
     <servers />
   </component>

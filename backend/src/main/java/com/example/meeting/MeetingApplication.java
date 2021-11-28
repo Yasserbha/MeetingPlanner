@@ -23,8 +23,7 @@ public class MeetingApplication {
         SpringApplication.run(MeetingApplication.class, args);
     }
 
-
-
+/*
     @Bean
     CommandLineRunner runner (ISalleServices iSalleServices , IReunionServices iReunionServices){
         return  args -> {
@@ -70,17 +69,11 @@ public class MeetingApplication {
             iSalleServices.ajoutSalle(new SalleRequestDTO("E3004",4,list));
 
 
-            /*
-            iReunionServices.ajoutReunion(new ReunionRequestDTO());
-            iReunionServices.ajoutReunion(new ReunionRequestDTO());
-            iReunionServices.ajoutReunion(new ReunionRequestDTO());
-            iReunionServices.ajoutReunion(new ReunionRequestDTO());
-            iReunionServices.ajoutReunion(new ReunionRequestDTO());
-            */
+
 
 
 
         };
-    }
 
+    } */
 }

@@ -1,2 +1,7 @@
+/home/yasserbha/Documents/MeetingPlanner/MeetingPlanner/backend/src/test/java/com/example/meeting/controllerTests/SalleControllerTests.java
+/home/yasserbha/Documents/MeetingPlanner/MeetingPlanner/backend/src/test/java/com/example/meeting/repositoriesTests/ReunionRepositoryTests.java
+/home/yasserbha/Documents/MeetingPlanner/MeetingPlanner/backend/src/test/java/com/example/meeting/controllerTests/JsonUtil.java
+/home/yasserbha/Documents/MeetingPlanner/MeetingPlanner/backend/src/test/java/com/example/meeting/serviceTests/ReunionServiceTests.java
+/home/yasserbha/Documents/MeetingPlanner/MeetingPlanner/backend/src/test/java/com/example/meeting/serviceTests/SalleServiceTests.java
 /home/yasserbha/Documents/MeetingPlanner/MeetingPlanner/backend/src/test/java/com/example/meeting/MeetingApplicationTests.java
-/home/yasserbha/Documents/MeetingPlanner/MeetingPlanner/backend/src/test/java/com/example/meeting/ReunionControllerTests.java
+/home/yasserbha/Documents/MeetingPlanner/MeetingPlanner/backend/src/test/java/com/example/meeting/repositoriesTests/SalleRepositoryTests.java

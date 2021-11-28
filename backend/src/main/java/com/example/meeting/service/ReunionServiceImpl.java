@@ -129,7 +129,10 @@ public class ReunionServiceImpl implements IReunionServices {
          if(msg.contains("Ajout valid !")){
             LOG.info("les equipement restants pieuvres: "+pieuvres+" Ecran : "+ecrans+" WebCam : "+webcams+" Tableau : "+tableaux);
             repoReunion.save(reunion);
-            LOG.info("salle "+salleResponseDTO);
+             msg =reunion.toString();
+             LOG.info("msg *************** "+reunionMapper.reunionToReunionResponseDTO(reunion));
+
+             LOG.info("salle "+salleResponseDTO);
             List<Reunion> reunions = salleResponseDTO.getReunion();
             reunions.add(reunion);
              salleResponseDTO.setReunion(reunions);
@@ -146,12 +149,13 @@ public class ReunionServiceImpl implements IReunionServices {
     }
     @Override
     public ReunionResponseDTO supprimeReunion(long idReunion) {
-        Reunion reunion =   repoReunion.findById(idReunion).orElse(null);
+        LOG.info("*********** iD ***** "+idReunion);
+       Reunion reunion =   repoReunion.findById(idReunion).orElse(null);
         try{
-            repoReunion.delete(reunion);
+            repoReunion.deleteById(idReunion);
         }
         catch (Exception e) {
-            LOG.error("Error Salle not found  : " + e);
+            LOG.error("Error reunion not found  : " + e);
         }
         return reunionMapper.reunionToReunionResponseDTO(reunion);
     }

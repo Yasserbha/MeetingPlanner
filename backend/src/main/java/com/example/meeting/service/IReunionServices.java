@@ -2,7 +2,6 @@ package com.example.meeting.service;
 
 import com.example.meeting.dto.ReunionRequestDTO;
 import com.example.meeting.dto.ReunionResponseDTO;
-import com.example.meeting.entities.Reunion;
 
 import java.util.List;
 

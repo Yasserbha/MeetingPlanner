@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.example.meeting.repositoriesTests.ReunionRepositoryTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.066 s <<< FAILURE! - in com.example.meeting.repositoriesTests.ReunionRepositoryTests
+getReunion  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.example.meeting.repositoriesTests.ReunionRepositoryTests.getReunion(ReunionRepositoryTests.java:48)
+
+updateReunionTest  Time elapsed: 0.013 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.example.meeting.repositoriesTests.ReunionRepositoryTests.updateReunionTest(ReunionRepositoryTests.java:68)
+
+deleteReunionTest  Time elapsed: 0.01 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.example.meeting.repositoriesTests.ReunionRepositoryTests.deleteReunionTest(ReunionRepositoryTests.java:83)
+

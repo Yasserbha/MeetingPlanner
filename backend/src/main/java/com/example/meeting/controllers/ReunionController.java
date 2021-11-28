@@ -30,7 +30,8 @@ public class ReunionController {
         try {
             LOG.info("*************"+reunionRequestDTO);
             String msg = iReunionServices.ajoutReunion(reunionRequestDTO);
-            if(msg.equals("Ajout valid !")) {
+            LOG.info("**** msg *********"+msg);
+            if(msg.contains("Reunion")) {
                 return new ResponseEntity<>(msg, HttpStatus.CREATED);
             }
             return new ResponseEntity<>(msg, HttpStatus.BAD_REQUEST);

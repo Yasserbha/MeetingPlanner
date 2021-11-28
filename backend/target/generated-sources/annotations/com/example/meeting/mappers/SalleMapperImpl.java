@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-11-27T23:22:33+0100",
+    date = "2021-11-28T21:00:48+0100",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 11.0.11 (Ubuntu)"
 )
 @Component
@@ -49,12 +49,12 @@ public class SalleMapperImpl implements SalleMapper {
         Salle salle = new Salle();
 
         salle.setId( salleRequestDTO.getId() );
+        salle.setName( salleRequestDTO.getName() );
+        salle.setNbrPlace( salleRequestDTO.getNbrPlace() );
         List<String> list = salleRequestDTO.getEquipements();
         if ( list != null ) {
             salle.setEquipements( new ArrayList<String>( list ) );
         }
-        salle.setName( salleRequestDTO.getName() );
-        salle.setNbrPlace( salleRequestDTO.getNbrPlace() );
         List<Reunion> list1 = salleRequestDTO.getReunion();
         if ( list1 != null ) {
             salle.setReunion( new ArrayList<Reunion>( list1 ) );
